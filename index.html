@@ -31,15 +31,19 @@
           <input type="text" name="password" id="password" />
         </div>
         <div class="actions">
-          <button id="copy2">C</button>
-          <button id="renew">R</button>
+          <button id="copy-1">
+            <img src="copy.svg" alt="Copy password" width="42">
+          </button>
+          <button id="renew">
+            <img src="renew.svg" alt="Renew password" width="42">
+          </button>
         </div>
       </div>
     </section>
 
     <input type="range" name="password-length" id="password-length" value="16" min="4" max="64" />
 
-    <button id="copy">Copy password</button>
+    <button id="copy-2">Copy password</button>
   </main>
   <script>
     const inputEl = document.querySelector("#password")
@@ -69,8 +73,8 @@
       generatorPassword()
     })
 
-    const copyButtonEl = document.querySelector("#copy")
-    copyButtonEl.addEventListener("click", copy)
+    document.querySelector("#copy-1").addEventListener("click", copy)
+    document.querySelector("#copy-2").addEventListener("click", copy)
 
     generatorPassword()
   </script>
