@@ -32,10 +32,10 @@
         </div>
         <div class="actions">
           <button id="copy-1">
-            <img src="copy.svg" alt="Copy password" width="42">
+            <img src="copy.svg" alt="Copy password" width="42" />
           </button>
           <button id="renew">
-            <img src="renew.svg" alt="Renew password" width="42">
+            <img src="renew.svg" alt="Renew password" width="42" />
           </button>
         </div>
       </div>
@@ -45,7 +45,32 @@
       </div>
     </section>
 
-    <input type="range" name="password-length" id="password-length" value="16" min="4" max="64" />
+    <section class="box customize">
+      <h3 class="title">Personalize</h3>
+      <div class="actions">
+        <div class="password-length">
+          <p>Tamanho: <span id="password-length-text">16</span></p>
+          <input type="range" name="password-length" id="password-length" value="16" min="4" max="64" />
+        </div>
+        <div class="config">
+          <label class="checkbox-container">
+            <span class="text">Upper Case</span>
+            <input type="checkbox" id="uppercase-check" checked />
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">
+            <span class="text">Numbers</span>
+            <input type="checkbox" id="number-check" checked />
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">
+            <span class="text">Symbols</span>
+            <input type="checkbox" id="symbol-check" checked />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+    </section>
 
     <button id="copy-2">Copy password</button>
   </main>
