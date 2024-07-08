@@ -1,2 +1,10 @@
 # password-generator-dev
-Projeto do desafio prático das aulas de Javascript do Dev Samurai.
+
+## DESCRIPTION
+Practical challenge after the Javascript lessons in the Dev Samurai frontend trainnings.
+
+## PROJECT INITIAL MODEL
+
+Below is the image showing the expected layout of the application functionalities after concluding the implementing project.
+
+![project initial layout](initial-layout.png)
