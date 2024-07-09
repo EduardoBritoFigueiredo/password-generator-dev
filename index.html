@@ -49,7 +49,7 @@
       <h3 class="title">Configurations</h3>
       <div class="actions">
         <div class="password-length">
-          <p>Tamanho: <span id="password-length-text">16</span></p>
+          <p>Size: <span id="password-length-text">16</span></p>
           <input type="range" name="password-length" class="slider" id="password-length" value="16" min="4" max="64" />
         </div>
         <div class="config">
@@ -118,6 +118,7 @@
 
     passwordLengthEl.addEventListener("input", function () {
       passwordLength = passwordLengthEl.value
+      document.querySelector("#password-length-text").innerText = passwordLength
       generatorPassword()
     })
     upperCaseCheckEl.addEventListener("click", generatorPassword)
