@@ -10,6 +10,8 @@ Below is the image showing the layout of the application functionalities after c
 
 ![project initial layout](password-generator-demo.png)
 
+Click [here](https://eduardobritofigueiredo.github.io/password-generator-dev) to see a demo of the web app working.
+
 ## FUNCTIONALITIES
 
 * **TEXT INPUT** showing the password generated in real time during configurations
